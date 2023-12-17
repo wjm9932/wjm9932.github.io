@@ -1,5 +1,5 @@
 ---
-title: Digital Minimalism
+title: Test
 tags: [Social Media, Minimalism, Technology]
 style: 
 color: 

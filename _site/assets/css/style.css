@@ -152,7 +152,7 @@ body { font-family: "Poppins", sans-serif; }
 .markdown-body table:not(.highlight) th { padding-top: 12px; padding-bottom: 12px; font-weight: 500; text-align: left; background-color: #007bff; color: white; }
 .markdown-body table:not(.highlight) tr:nth-child(even) { background-color: rgba(0, 0, 0, 0.05); }
 
-.project.card { border-radius: 15px; text-decoration: none !important; margin: 10px auto; transition: transform 400ms; }
+.project.card { border-radius: 15px; text-decoration: none !important; margin: 10px 0px; transition: transform 400ms; }
 .project.card .card-img-top { border-radius: 15px 15px 0 0; }
 .project.card:hover:not(.post) { transform: translateY(-8px); box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24); }
 
