@@ -1,9 +1,15 @@
-- name: C
+- name: C++
   color: light
 
-- name: C++
+- name: C#
   color: light
 
 
 - name: C#
+  color: light
+
+- name: Java
+  color: light
+
+- name: React Native
   color: light
