@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<!--
+  portfolYOU Jekyll theme by Youssef Raafat
+  Free for personal and commercial use under the MIT license
+  https://github.com/YoussefRaafatNasry/portfolYOU
+-->
+
+<html lang="en" class="h-100">
+
+<head>
+
+  
+  
+  
+
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Unity 2D Platformer">
+  <meta property="og:description" content="Jaemin Woo">
+  <meta property="og:image" content="/assets/Platformer/Thumbnail1.png">
+
+  <title>Unity 2D Platformer</title>
+  <meta name="description" content="Jaemin Woo">
+
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <!-- Theme style -->
+  <script src="/assets/js/theme.js"></script>
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+</head>
+
+
+<body class="h-100 d-flex flex-column">
+
+  <main class="flex-shrink-0 container mt-5">
+    <nav class="navbar navbar-expand-lg navbar-themed">
+
+  <a class="navbar-brand" href="/"><h5><b>Jaemin Woo</b></h5></a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-1x fa-bars text-themed"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/about/">About</a>
+
+      <a class="nav-item nav-link " href="/experiences/">Experiences</a>
+
+      <a class="nav-item nav-link " href="/teamprojects/">Team Projects</a>
+
+      <a class="nav-item nav-link " href="/soloprojects/">Solo Projects</a>
+
+      
+
+      <span id="theme-toggler" class="nav-item nav-link" role="button" onclick="toggleTheme()"></span>
+    </div>
+  </div>
+
+</nav>
+    <div class="col-lg-10 mx-auto mt-5 markdown-body">
+  <h1 id="unity-2d-platformer">Unity 2D Platformer</h1>
+<p><br /></p>
+
+<div class="video">
+  <iframe src="https://www.youtube.com/embed/9zXK-YzfEgY" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="false">
+
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li><li data-target="#carouselExampleIndicators" data-slide-to="1"></li><li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+          <img src="/assets/Space_2.gif" class="d-block w-100" />
+        </div><div class="carousel-item">
+          <img src="
+/assets/Space_3.gif" class="d-block w-100" />
+        </div><div class="carousel-item">
+          <img src="
+/assets/Space_4.gif" class="d-block w-100" />
+        </div>
+  </div>
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+<h5 id="engine-unity">Engine: Unity</h5>
+<h5 id="genre-2d-platformer">Genre: 2D Platformer</h5>
+<h5 id="platform-pc">Platform: PC</h5>
+<h5 id="language-c">Language: C#</h5>
+<h5 id="dec-2024---jan-2025">Dec 2024 - Jan 2025</h5>
+
+<p><br /></p>
+
+<h3 id="description">Description:</h3>
+<p>제가 구현한 2D 캐릭터 컨트롤러를 활용하여 개발한 플랫포머 게임입니다.
+이 컨트롤러를 통해 다양한 움직임을 구현할 수 있으며, 부드럽고 만족스러운 캐릭터 움직임과 점프를 구현했습니다.
+또한, 공격, 대쉬, 다양한 적들을 추가하여 긴장감 있는 전투를 구현하였습니다.</p>
+<h3 id="what-i-worked-on">What I worked on:</h3>
+<ul>
+  <li>2D 캐릭터 컨트롤러 구현
+    <ul>
+      <li>Finite State Machine과 Rigidbody를 사용하여 이동, 점프 및 2단 점프, 대쉬, 벽 점프, 벽 슬라이딩 구현</li>
+      <li>점프, 대쉬 그리고 공격의 코요테 타임 개발 및 적용</li>
+      <li>Scriptable Object를 활용하여 이동 속도, 점프력, 대쉬 거리 등의 값을 변경할 수 있도록 설계하여 여러 종류의 움직임을 쉽게 적용할 수 있는 유연한 컨트롤러 개발</li>
+    </ul>
+  </li>
+  <li>직접 구현한 Behavior Tree를 사용하여 4 종류의 몬스터 및 보스 AI 개발
+    <ul>
+      <li>BT 초기화 과정을 단계별로 생성할 수 있도록 Builder 패턴 구현 및 적용</li>
+    </ul>
+  </li>
+  <li>FSM과 애니메이션 이벤트를 통해 콤보 공격 개발</li>
+  <li>움직이는 플랫폼, 사라지는 플랫폼, 바운스 패드, 그리고 밀 수 있는 오브젝트를 개발하여 게임에 적용</li>
+  <li>Sin과 Cos 함수를 활용하여 진자 운동 효과와 부드러운 왕복 이동 효과를 적용한 장애물 구현</li>
+  <li>Object pooling을 구현하여 빈번한 오브젝트의 생성과 삭제를 방지</li>
+  <li>Json을 이용한 Save/Load 구현</li>
+</ul>
+
+</div>
+  </main>
+  <footer class="mt-auto py-3 text-center">
+
+  <small class="text-muted mb-2">
+    <i class="fas fa-code"></i> with <i class="fas fa-heart"></i>
+    by <strong>Jaemin Woo</strong>
+  </small>
+
+  <div class="container-fluid justify-content-center"><a class="social mx-1"  href="mailto:wjm9932@gmail.com"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#db4437'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fas fa-envelope fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.github.com/wjm9932"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#333333'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-github fa-1x"></i>
+    </a><a class="social mx-1"  href="https://www.linkedin.com/in/jaemin-woo"
+       style="color: #6c757d"
+       onMouseOver="this.style.color='#007bb5'"
+       onMouseOut="this.style.color='#6c757d'">
+      <i class="fab fa-linkedin-in fa-1x"></i>
+    </a>
+
+</div><small id="attribution">
+    theme <a href="https://github.com/YoussefRaafatNasry/portfolYOU">portfolYOU</a>
+  </small>
+
+</footer>
+
+  
+  <!-- GitHub Buttons -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+<!-- jQuery CDN -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper.js CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- wow.js CDN & Activation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+<script> new WOW().init(); </script>
+
+<!-- Initialize all tooltips -->
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+</body>
+
+</html>
