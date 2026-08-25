@@ -1,3 +1,5 @@
+$timeline-accent: #256fbd;
+
 .timeline-body {
   position: relative;
   border-radius: 0 $rounded-borders $rounded-borders 0;
@@ -8,7 +10,7 @@
     content: "";
     width: 4px;
     height: 100%;
-    background-color: $primary;
+    background-color: $timeline-accent;
     position: absolute;
     left: -4px;
     top: 0;
@@ -23,7 +25,7 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
-      border: 4px solid $primary;
+      border: 4px solid $timeline-accent;
       background-color: $light;
       position: absolute;
       left: -12px;
@@ -32,15 +34,123 @@
     }
 
     .content {
+      --timeline-content-x: 40px;
       margin: 40px;
       padding-bottom: 20px;
-      border-bottom: 1px dashed $dark;
+
+      .experience-header {
+        display: block;
+      }
+      .experience-title-row {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 5px;
+      }
+
+      .timeline-marker {
+        width: 20px;
+        height: 20px;
+        flex: 0 0 20px;
+        margin-left: calc((var(--timeline-content-x) + 12px) * -1);
+        margin-right: calc(var(--timeline-content-x) - 8px);
+        border: 4px solid $timeline-accent;
+        border-radius: 50%;
+        background-color: $light;
+        z-index: 10;
+
+        [data-theme="dark"] & {
+          background-color: #17191a;
+        }
+      }
+
+      .experience-meta {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .company {
+        font-size: 1.125rem;
+        font-weight: 600;
+        line-height: 1.5;
+
+        [data-theme="light"] & {
+          color: $text-black;
+        }
+
+        [data-theme="dark"] & {
+          color: rgba(white, 0.82);
+        }
+      }
+
+      h2 {
+        font-size: 2.0rem;
+        color: $timeline-accent;
+        margin-bottom: 0;
+        line-height: 1.45;
+        letter-spacing: 0.01em;
+        word-break: keep-all;
+
+        font {
+          display: inline-block;
+          margin-top: 6px;
+          line-height: 1.5;
+        }
+      }
 
       .date {
-        margin-top: -5px;
-        margin-bottom: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
         color: #6c757d;
+        letter-spacing: 0.03em;
+        line-height: 1.45;
+        white-space: nowrap;
+      }
+
+      .description {
+        line-height: 1.85;
+        letter-spacing: 0.01em;
+        overflow-wrap: break-word;
+        word-break: keep-all;
+
+        [data-theme="light"] & {
+          color: rgba($text-black, 0.82);
+        }
+
+        [data-theme="dark"] & {
+          color: rgba(white, 0.72);
+        }
+
+        ul {
+          margin: 0;
+          padding-left: 1.5rem;
+        }
+
+        li {
+          margin-bottom: 6px;
+
+          &::marker {
+            color: $timeline-accent;
+          }
+        }
+
+        li:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
+}
+
+@media (max-width: 576px) {
+  .timeline-body .timeline-item .content {
+    --timeline-content-x: 24px;
+    margin: 32px 24px;
+  }
+}
+
+.experiences-timeline .timeline-item:after {
+  display: none;
 }

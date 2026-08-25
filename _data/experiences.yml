@@ -1,10 +1,15 @@
-- title: <strong>Software Engineer 전투</strong><br/> <font size="4">Kong Studios Korea</font>
+- title: Software Engineer 전투 클라이언트
+  company: Kong Studios Korea
   from: June 2025
   to: Current
   description: <ul>
+    <li>Behaviour Tree 데이터 구조를 설계하고, Behaviour Tree 시스템을 구현하였습니다.</li>
+    <li>Behaviour Tree 제작 및 디버깅 효율을 높이기 위해 Copy/Paste, SubTree, 디버깅 기능, 노드 실행 결과 표시 및 실행 중인 노드 하이라이트 기능을 지원하는 전용 에디터를 구현하였습니다.</li>
+    <li>배치 툴, 애니메이터 오버라이드 자동화 툴 등 개발 생산성 향상과 데이터 검증을 위한 다양한 자동화 툴을 제작하였습니다.</li>
                </ul>
 
-- title: <strong>Software Engineer Intern</strong><br/> <font size="4">A Round Entertainment</font>
+- title: Software Engineer Intern
+  company: A Round Entertainment
   from: Jan 2024
   to: Apr 2024
   description: <ul>
@@ -14,7 +19,8 @@
                <li> 다양한 팀원과 타 부서 직원들과의 협업을 통해 효과적인 협업 능력을 키웠습니다.</li>
                </ul>
 
-- title: <strong>Teaching Assistant</strong><br/> <font size="4">DigiPen Institute of Technology</font>
+- title: Teaching Assistant
+  company: DigiPen Institute of Technology
   from: Jan 2024
   to: Apr 2024
   description: <ul>
