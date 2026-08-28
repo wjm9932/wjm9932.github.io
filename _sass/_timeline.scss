@@ -113,6 +113,20 @@ $timeline-accent: #256fbd;
         color: $timeline-accent;
       }
 
+      .engine-badge {
+        display: inline-block;
+        margin-left: 0.5rem;
+        padding: 0.08rem 0.45rem;
+        border: 1px solid rgba($timeline-accent, 0.45);
+        border-radius: 999px;
+        background-color: rgba($timeline-accent, 0.08);
+        color: $timeline-accent;
+        font-size: 0.75rem;
+        font-weight: 600;
+        line-height: 1.35;
+        vertical-align: middle;
+
+      }
       h2 {
         font-size: 2.0rem;
         color: $timeline-accent;

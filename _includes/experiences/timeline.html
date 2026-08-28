@@ -10,7 +10,7 @@
             </div>
             <div class="experience-meta">
               {% if item.project %}
-                <span class="project"><span class="project-label">Project :</span> <span class="project-name">{{ item.project }}</span></span>
+                <span class="project"><span class="project-label">Project :</span> <span class="project-name">{{ item.project }}</span>{% if item.engine %}<span class="engine-badge">{{ item.engine }}</span>{% endif %}</span>
               {% endif %}
               <div class="experience-company-row">
                 <span class="company">{{ item.company }}</span>
