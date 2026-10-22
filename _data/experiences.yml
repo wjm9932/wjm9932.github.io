@@ -10,6 +10,9 @@
                 <li>UI Toolkit을 사용하여 배치 툴, 애니메이터 오버라이드 자동화 툴 등 개발 생산성 향상과 데이터 검증을 위한 다양한 자동화 툴을 제작하였습니다.</li>
                 <li>PC 스킬과 몬스터 패턴 등 전투 인게임 로직을 개발하였습니다.</li>
                 <li>기존 액션 툴에 추가적으로 필요한 액션 트랙 데이터와 런타임 액션 트랙 인스턴스를 설계 및 구현하였습니다.</li>
+                <li>Kinematic 이동 및 충돌 시스템 R&D를 진행하고, Sweep 기반 충돌 처리 및 이동 로직을 구현하였습니다.</li>
+                <li>MTV(Minimum Translation Vector) 기반 초기 충돌 겹침 해소 로직을 설계 및 구현하였습니다.</li>
+                <li>A* Pathfinding Project 패키지에 대한 R&D를 진행하고, 이를 활용하여 캐릭터의 이동 가능 영역을 판별하는 로직을 구현하였습니다.</li>
                 </ul>
 
 - title: Software Engineer Intern
