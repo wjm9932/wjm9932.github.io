@@ -31,3 +31,7 @@
   @include themed(background-color, $light, $dark);
 }
 
+
+.project-section-title {
+  @include themed(color, $text-black, $text-white);
+}

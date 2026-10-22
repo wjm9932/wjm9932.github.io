@@ -115,3 +115,43 @@
     }
   }
 }
+.project-meta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 1rem 0 1.5rem;
+}
+
+.project-meta-card {
+  display: flex;
+  flex: 1 1 190px;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 0.8rem 1rem;
+  border: 1px solid rgba($primary, 0.28);
+  border-radius: 10px;
+  background: rgba($primary, 0.045);
+}
+
+.project-meta-label {
+  color: $secondary;
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.project-meta-value {
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.project-section-title {
+  margin: 1.75rem 0 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid rgba($primary, 0.28);
+  font-size: 1.1rem;
+  font-weight: 400;
+}

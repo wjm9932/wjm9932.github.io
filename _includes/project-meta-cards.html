@@ -1,0 +1,9 @@
+<div class="project-meta-grid" aria-label="Project details">
+  {% if include.engine %}<div class="project-meta-card"><span class="project-meta-label">Engine</span><span class="project-meta-value">{{ include.engine | escape }}</span></div>{% endif %}
+  {% if include.genre %}<div class="project-meta-card"><span class="project-meta-label">Genre</span><span class="project-meta-value">{{ include.genre | escape }}</span></div>{% endif %}
+  {% if include.platform %}<div class="project-meta-card"><span class="project-meta-label">Platform</span><span class="project-meta-value">{{ include.platform | escape }}</span></div>{% endif %}
+  {% if include.language %}<div class="project-meta-card"><span class="project-meta-label">Language</span><span class="project-meta-value">{{ include.language | escape }}</span></div>{% endif %}
+  {% if include.team_size %}<div class="project-meta-card"><span class="project-meta-label">Team size</span><span class="project-meta-value">{{ include.team_size | escape }}</span></div>{% endif %}
+  {% if include.tools %}<div class="project-meta-card"><span class="project-meta-label">Tools</span><span class="project-meta-value">{{ include.tools | escape }}</span></div>{% endif %}
+  {% if include.period %}<div class="project-meta-card"><span class="project-meta-label">Period</span><span class="project-meta-value">{{ include.period | escape }}</span></div>{% endif %}
+</div>
