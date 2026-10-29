@@ -1,26 +1,31 @@
-<div class="col mt-4 experiences-timeline">
-  <div class="timeline-body bg-themed">
-    {% for item in site.data.experiences %}
-      <div class="timeline-item">
-        <div class="content">
-          <div class="experience-header">
-            <div class="experience-title-row">
-              <span class="timeline-marker" aria-hidden="true"></span>
-              <h2>{{ item.title }}</h2>
-            </div>
-            <div class="experience-meta">
-              {% if item.project %}
-                <span class="project"><span class="project-label">Project :</span> <span class="project-name">{{ item.project }}</span>{% if item.engine %}<span class="engine-badge">{{ item.engine }}</span>{% endif %}</span>
-              {% endif %}
-              <div class="experience-company-row">
-                <span class="company">{{ item.company }}</span>
-                <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-              </div>
-            </div>
+{% for item in site.data.experiences %}
+  <div class="col-12 mb-4">
+    <article class="experience-card card bg-themed text-themed">
+      <div class="card-body">
+        <div class="experience-header">
+          <div class="experience-heading">
+            <h2 class="experience-title">{{ item.title }}</h2>
           </div>
-          <div class="description">{{ item.description }}</div>
+          <span class="experience-date">{{ item.from }} — {{ item.to }}</span>
         </div>
+        <div class="experience-info-list">
+          {% if item.project %}
+            <span class="experience-info-label">Project</span>
+            <span class="experience-info-value">{{ item.project }}</span>
+          {% endif %}
+          {% if item.genre %}
+            <span class="experience-info-label">Genre</span>
+            <span class="experience-info-value">{{ item.genre }}</span>
+          {% endif %}
+          {% if item.engine %}
+            <span class="experience-info-label">Engine</span>
+            <span class="experience-info-value">{{ item.engine }}</span>
+          {% endif %}
+          <span class="experience-info-label">Company</span>
+          <span class="experience-info-value">{{ item.company }}</span>
+        </div>
+        <div class="experience-description">{{ item.description }}</div>
       </div>
-    {% endfor %}
+    </article>
   </div>
-</div>
+{% endfor %}
