@@ -1,13 +1,15 @@
-<div class="col mt-4">
-  <div class="timeline-body bg-themed">
-    {% for item in site.data.timeline %}
-      <div class="timeline-item">
-        <div class="content">
-          <h2>{{ item.title }}</h2>
-          <h6 class="date">{{ item.from }} — {{ item.to }}</h6>
-          <p>{{ item.description }}</p>
+{% for item in site.data.timeline %}
+  <div class="col-12 mb-4">
+    <article class="portfolio-card education-card card bg-themed text-themed">
+      <div class="card-body">
+        <div class="experience-header">
+          <div class="experience-heading education-heading">
+            <h2 class="portfolio-card-title">{{ item.title }}</h2>
+            <span class="education-date">{{ item.from }} — {{ item.to }}</span>
+          </div>
         </div>
+        <div class="experience-description education-description">{{ item.description }}</div>
       </div>
-    {% endfor %}
+    </article>
   </div>
-</div>
+{% endfor %}

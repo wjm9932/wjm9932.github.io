@@ -13,4 +13,9 @@
     transform: translateY(-8px);
     box-shadow: -2px 8px 40px -12px rgba(0, 0, 0, 0.24);
   }
+
+  &:hover,
+  &:focus {
+    color: $text-white;
+  }
 }

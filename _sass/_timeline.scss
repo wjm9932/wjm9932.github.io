@@ -1,6 +1,6 @@
 $timeline-accent: #256fbd;
 
-.experience-card {
+.portfolio-card {
   border: 1px solid rgba($timeline-accent, 0.18);
   border-radius: $rounded-borders;
   margin: 10px 0;
@@ -22,7 +22,7 @@ $timeline-accent: #256fbd;
     gap: 1rem;
   }
 
-  .experience-title {
+  .portfolio-card-title {
     margin: 0;
     color: $timeline-accent;
     font-size: 1.5rem;
@@ -64,6 +64,14 @@ $timeline-accent: #256fbd;
     white-space: nowrap;
   }
 
+  .education-date {
+    display: block;
+    margin-top: 0.2rem;
+    color: rgba(white, 0.72);
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
   .experience-description {
     margin-top: 1rem;
     line-height: 1.8;
@@ -91,8 +99,28 @@ $timeline-accent: #256fbd;
   }
 }
 
+.education-card .education-description {
+  margin-top: 0;
+  font-size: 1.05rem;
+}
+
+.education-card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.education-card .experience-header {
+  display: block;
+}
+
+.education-card .education-heading {
+  display: grid;
+  gap: 0.5rem;
+}
+
 @media (max-width: 576px) {
-  .experience-card {
+  .portfolio-card {
     .card-body {
       padding: 1.15rem;
     }
@@ -102,8 +130,46 @@ $timeline-accent: #256fbd;
       gap: 0.65rem;
     }
 
-    .experience-title {
+    .portfolio-card-title {
       font-size: 1.3rem;
     }
   }
+
+  .education-card .card-body,
+  .education-card .education-heading {
+    gap: 0.5rem;
+  }
+}
+
+.about-skills-card {
+  margin-bottom: 1.5rem;
+}
+
+.about-skill-group + .about-skill-group {
+  margin-top: 1.1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba($primary, 0.22);
+}
+
+.about-skill-title {
+  margin: 0;
+  color: $timeline-accent;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.about-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.65rem;
+}
+
+.about-skill {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid rgba(white, 0.12);
+  border-radius: 0.35rem;
+  background: rgba(white, 0.05);
+  color: rgba(white, 0.84);
+  font-size: 1rem;
 }
